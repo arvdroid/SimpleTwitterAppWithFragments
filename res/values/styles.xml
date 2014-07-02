@@ -1,0 +1,54 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+        
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <!-- <item name="android:actionBarStyle">@style/MyActionBarStyle</item> -->
+    </style>
+    
+    
+	
+    <!-- 
+    	android:Theme.Holo.Light.DarkActionBar
+     -->
+    
+    <style name="TweetzTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/TweetzTheme.ActionBar</item>
+        <item name="android:actionBarTabStyle">@style/TweetzTheme.ActionBar.Tab</item>
+        <item name="android:actionButtonStyle">@style/TweetzTheme.ActionButtonStyle</item>
+    </style>
+
+    <style name="TweetzTheme.ActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@color/blueIvy</item>
+        <item name="android:titleTextStyle">@style/TweetzTheme.ActionBarText</item>
+    </style>
+    
+    <style name="TweetzTheme.ActionBar.Tab">
+        <item name="android:background">@drawable/my_stacked_background</item>
+    </style>
+    
+    <style name="TweetzTheme.ActionButtonStyle" parent="@android:style/Widget.Holo.Light.ActionButton">
+	    <item name="android:minWidth">5dip</item>
+	    <item name="android:paddingLeft">2dip</item>
+	    <item name="android:paddingRight">2dip</item>
+	</style>
+	<style name="TweetzTheme.ActionBarText" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+  		<item name="android:textSize">20sp</item>
+  		<item name="android:textStyle">normal</item>
+  		<item name="android:textColor">@color/blue</item>
+	</style>
+
+</resources>

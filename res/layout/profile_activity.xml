@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.codepath.apps.simpletwitter.ProfileActivity$PlaceholderFragment" >
+	
+   <!--  <ImageView
+        android:id="@+id/pUserImageView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:src="@drawable/ic_launcher" />
+    <TextView
+        android:id="@+id/tvPUserName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pUserImageView"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="User"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <TextView
+        android:id="@+id/tvPUserTag"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPUserName"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="User"
+        android:textAppearance="?android:attr/textAppearanceSmall" /> -->
+
+    <!-- <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvPUserTag"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/profile_stats_layout" android:id="@+id/linearLayout1">
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/profile_stats_layout"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvTweetsLbl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Tweets"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/tvTweetsCnt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/profile_stats_layout"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            
+             <TextView
+                android:id="@+id/tvFollowingLbl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Following"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/tvFollowingCnt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/profile_stats_layout"
+            android:orientation="vertical"
+            android:layout_weight="1" >
+            
+             <TextView
+                android:id="@+id/tvFollowersLbl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Followers"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/tvFollowersCnt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+            
+        </LinearLayout>
+
+    </LinearLayout> -->
+
+    <fragment
+        android:id="@+id/fragment11"
+        android:name="com.codepath.apps.simpletwitter.fragements.UserProfileFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        tools:layout="@layout/user_profile_fragment" />
+
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.codepath.apps.simpletwitter.fragements.UserTimeLineFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment11"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        tools:layout="@layout/fragment_tweet_timeline" />
+    
+</RelativeLayout>
+
