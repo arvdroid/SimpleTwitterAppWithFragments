@@ -34,3 +34,5 @@ Optional:
 6. User select "retweet" from detail view to retweet a tweet.
 
 7. Intermediate Progress bar is added during loading of tweets.
+
+![video walkthrough](simple_twitter_app_with_fragments.gif)
